@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../components/common/Container';
-import loginDemoImage from '../assets/images/scraping/LoginToWebsite.jpg';
+const loginDemoImage = '/images/scraping/LoginToWebsite.jpg';
 import SEO from '../components/common/SEO';
 
 const CSharpTutorial = () => {

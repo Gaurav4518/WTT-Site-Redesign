@@ -305,7 +305,7 @@ export const serviceDetails = {
 
                 <div class="my-12 overflow-hidden rounded-3xl shadow-2xl border border-gray-100 group transition-all duration-500">
                     <img 
-                        src="/src/assets/images/scraping/WebScraping.jpg" 
+                        src="/images/scraping/WebScraping.jpg" 
                         alt="Web Data Scraping" 
                         class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
                     />
@@ -321,7 +321,7 @@ export const serviceDetails = {
                     
                     <div class="overflow-hidden rounded-2xl shadow-2xl border border-emerald-100 bg-white p-6 flex justify-center transform hover:scale-[1.01] transition-transform duration-500">
                         <img 
-                            src="/src/assets/images/scraping/WebScrapingServices.png" 
+                            src="/images/scraping/WebScrapingServices.png" 
                             alt="Web Scraping Technology" 
                             class="w-full max-w-4xl h-auto object-contain"
                         />
@@ -349,7 +349,7 @@ export const serviceDetails = {
                     
                     <div class="mb-12 overflow-hidden rounded-[2rem] shadow-2xl border border-gray-200 bg-white p-6 md:p-10 transform hover:shadow-emerald-500/10 transition-all duration-500">
                         <img 
-                            src="/src/assets/images/scraping/WebScrapingWorkflow.png" 
+                            src="/images/scraping/WebScrapingWorkflow.png" 
                             alt="Web Scraping Workflow" 
                             class="w-full h-auto max-w-5xl mx-auto object-contain"
                         />
