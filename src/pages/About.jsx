@@ -57,45 +57,90 @@ const About = () => {
 
             <Container>
                 {/* --- Who We Are Section --- */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
-                    <div className="relative group">
-                        <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-                        <img
-                            src="/images/about-team.png"
-                            alt="Professional tech team collaborating"
-                            className="relative rounded-2xl shadow-2xl w-full h-64 md:h-[500px] object-cover"
-                        />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+                    <div className="relative order-2 lg:order-1">
+                        <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img
+                                src="/images/about-team.png"
+                                alt="Professional tech team collaborating"
+                                className="w-full h-[400px] lg:h-[550px] object-cover hover:scale-105 transition-transform duration-700"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+                                <div className="flex gap-8 text-white">
+                                    {stats.slice(0, 2).map((stat, i) => (
+                                        <div key={i}>
+                                            <div className="text-3xl font-bold">{stat.value}</div>
+                                            <div className="text-sm opacity-80">{stat.label}</div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
+                    <div className="order-1 lg:order-2">
                         <SectionTitle
-                            title="Transforming Ideas into Reality"
+                            title="Your Vision, Our Expertise"
                             subtitle="Who We Are"
                             centered={false}
                             className="mb-8"
                         />
-                        <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                            Web Tech Talk is a premier software development power-house dedicated to delivering high-quality, scalable, and innovative technology solutions.
-                        </p>
-                        <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                            Our team of passionate engineers and designers specialize in modern web apps, enterprise software, and industrial automation. We don't just build software; we build the future of your business.
-                        </p>
-                        <div className="grid grid-cols-2 gap-6">
-                            {stats.map((stat, i) => (
-                                <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                                    <div className="text-2xl text-primary">{stat.icon}</div>
-                                    <div>
-                                        <div className="text-2xl font-bold text-secondary">{stat.value}</div>
-                                        <div className="text-sm text-gray-500">{stat.label}</div>
-                                    </div>
-                                </div>
-                            ))}
+                        <div className="space-y-6">
+                            <p className="text-xl text-secondary font-medium leading-relaxed italic border-l-4 border-primary pl-6">
+                                Web Tech Talk designs, develops, markets, and supports enterprise applications that meet the critical requirements of modern businesses.
+                            </p>
+                            <p className="text-lg text-gray-600 leading-relaxed">
+                                Our team consists of experienced web designers, developers, and SEO experts dedicated to generating custom solutions that fulfill every business need. We pride ourselves on using a <strong>modern agile workflow</strong> and <strong>scrum development methodology</strong>.
+                            </p>
+                            <p className="text-lg text-gray-600 leading-relaxed">
+                                This ensures that the solutions we build are as beautiful as they are functional, delivered with meticulous attention to detail and a focus on long-term scalability.
+                            </p>
                         </div>
                     </div>
                 </div>
             </Container>
 
-            <Container className="mt-32">
-                {/* --- Core Values Section --- */}
+            {/* --- Specialized Expertise: Web Scraping --- */}
+            <div className="bg-gray-50 py-24 mb-32">
+                <Container>
+                    <div className="max-w-4xl mx-auto text-center mb-16">
+                        <SectionTitle
+                            title="Industry Leading Web Data Extraction"
+                            subtitle="Core Specialization"
+                        />
+                    </div>
+                    <Card className="p-10 md:p-16 border-none shadow-xl bg-white relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32"></div>
+                        <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                            <div className="lg:col-span-1">
+                                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-3xl">
+                                    <FaCogs />
+                                </div>
+                            </div>
+                            <div className="lg:col-span-11">
+                                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                                    Web Tech Talk is a group of IT professionals to help find solutions for any type of Web Development, Windows Development, and Mobile Application Development. We have expertise in Web Design & Development, Mobile Application Development, and Website Scraping.
+                                </p>
+                                <div className="bg-primary/5 p-8 rounded-2xl border border-primary/10 mb-8">
+                                    <h4 className="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                                        <FaCheckCircle className="text-primary text-xl" />
+                                        100% Risk-Free & Accurate Scraping
+                                    </h4>
+                                    <p className="text-lg text-gray-600 leading-relaxed">
+                                        Website Scraping is one of our core services. We offer affordable, accurate web scraping service or data extraction/scraping. It is also known as Web Data Extraction, Web Content Extraction, Web Harvesting, Web Data Grabbing, Web Data Mining and Screen Scraping.
+                                    </p>
+                                </div>
+                                <p className="text-lg text-gray-600 leading-relaxed">
+                                    We offer website scraping service, data extraction/scraping, text parsing, screen scraping, web data extraction, and website scraping and custom scraping development service to large companies as well as medium size companies which need data to be processed. Please navigate to our service section to know more about list of services we offer.
+                                </p>
+                            </div>
+                        </div>
+                    </Card>
+                </Container>
+            </div>
+
+            <Container className="mb-32">
+                {/* --- Core Expertise Grid --- */}
                 <div className="mb-32">
                     <SectionTitle
                         title="What Drives Us"
@@ -103,7 +148,7 @@ const About = () => {
                     />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {values.map((v, i) => (
-                            <Card key={i} className="p-8 hover-lift flex flex-col items-center text-center">
+                            <Card key={i} className="p-8 hover-lift flex flex-col items-center text-center border-none shadow-sm hover:shadow-md transition-shadow">
                                 <div className="text-4xl mb-6">{v.icon}</div>
                                 <h3 className="text-xl font-bold text-secondary mb-4">{v.title}</h3>
                                 <p className="text-gray-600 leading-relaxed">{v.description}</p>
@@ -113,30 +158,34 @@ const About = () => {
                 </div>
 
                 {/* --- Mission & Vision --- */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
-                    <div className="glass-card p-12 rounded-3xl relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 p-8 text-6xl text-emerald-500/5 group-hover:scale-110 transition-transform">
-                            <FaRocket />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div className="group p-1 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-3xl h-full">
+                        <div className="bg-white p-12 rounded-[22px] h-full relative overflow-hidden">
+                            <div className="absolute top-0 right-0 p-8 text-6xl text-emerald-500/5 group-hover:scale-110 transition-transform">
+                                <FaRocket />
+                            </div>
+                            <h3 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+                                <span className="w-2 h-10 bg-emerald-500 rounded-full"></span>
+                                Our Mission
+                            </h3>
+                            <p className="text-xl text-gray-600 leading-relaxed">
+                                To empower businesses with state-of-the-art technology solutions that drive efficiency, growth, and competitive advantage in the digital era.
+                            </p>
                         </div>
-                        <h3 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
-                            <span className="w-1.5 h-8 bg-emerald-500 rounded-full"></span>
-                            Our Mission
-                        </h3>
-                        <p className="text-lg text-gray-600 leading-relaxed">
-                            To empower businesses with state-of-the-art technology solutions that drive efficiency, growth, and competitive advantage in the digital era.
-                        </p>
                     </div>
-                    <div className="glass-card p-12 rounded-3xl relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 p-8 text-6xl text-blue-500/5 group-hover:scale-110 transition-transform">
-                            <FaLightbulb />
+                    <div className="group p-1 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-3xl h-full">
+                        <div className="bg-white p-12 rounded-[22px] h-full relative overflow-hidden">
+                            <div className="absolute top-0 right-0 p-8 text-6xl text-blue-500/5 group-hover:scale-110 transition-transform">
+                                <FaLightbulb />
+                            </div>
+                            <h3 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+                                <span className="w-2 h-10 bg-blue-500 rounded-full"></span>
+                                Our Vision
+                            </h3>
+                            <p className="text-xl text-gray-600 leading-relaxed">
+                                To be a globally recognized leader in software innovation, known for our integrity, quality, and customer-centric approach.
+                            </p>
                         </div>
-                        <h3 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
-                            <span className="w-1.5 h-8 bg-blue-500 rounded-full"></span>
-                            Our Vision
-                        </h3>
-                        <p className="text-lg text-gray-600 leading-relaxed">
-                            To be a globally recognized leader in software innovation, known for our integrity, quality, and customer-centric approach.
-                        </p>
                     </div>
                 </div>
             </Container>

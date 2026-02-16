@@ -7,19 +7,19 @@ const features = [
     {
         icon: <FaRegComments />,
         title: "Communication",
-        description: "We believe in transparent and continuous communication. You are involved in every step of the development process.",
+        description: "We do enough communication to listen to your needs and understand your business to ensure our design solutions will be effective.",
         gradient: "from-emerald-500 to-green-600"
     },
     {
         icon: <FaUserTie />,
         title: "Experienced Team",
-        description: "Our developers are industry veterans with deep expertise in their respective technologies.",
+        description: "We have experienced team consisting of project managers, web designers, web developers and programmers that can deliver the best results.",
         gradient: "from-teal-500 to-cyan-500"
     },
     {
         icon: <FaHandHoldingUsd />,
         title: "Effective Cost",
-        description: "We deliver premium quality software solutions at competitive rates, ensuring high ROI for your business.",
+        description: "We provide cost effective solutions that fits in your budget in given time frame because we value time!",
         gradient: "from-lime-500 to-green-500"
     }
 ];

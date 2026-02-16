@@ -173,37 +173,86 @@ export const serviceDetails = {
     "web-app-development": {
         title: "Web Application Development",
         content: `
-            <div class="space-y-8">
-                <p class="text-lg leading-relaxed text-gray-700">
-                    Web Tech Talk is specialized in developing dynamic websites in PHP and ASP.Net using modern web technologies like HTML5, Javascript, AJAX, jQuery, CSS and flash. Our web development service includes web application development, custom CMS development and e-commerce website development. We create a new and innovative business model for Web Development, which can serve most of the solutions.
-                </p>
-                <div class="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
-                    <p class="text-emerald-900 font-medium">
-                        We also consider the security aspect of the system as top priority that result into robust web application. We take every assignment and client as top priority, which help us in delivering the solution on timely basis.
+            <div class="space-y-12">
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p>
+                        Web Tech Talk is specialized in developing dynamic websites in PHP and ASP.Net using modern web technologies like HTML5, Javascript, AJAX, jQuery, CSS and flash. Our web development service includes web application development, custom CMS development and e-commerce website development. We create a new and innovative business model for Web Development, which can serve most of the solutions.
                     </p>
                 </div>
-                
-                <h3 class="text-2xl font-bold text-secondary mt-10 mb-4">Core Technologies</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                        <h4 class="text-xl font-bold text-emerald-600 mb-3">PHP Web Development</h4>
-                        <p class="text-gray-600 mb-4">PHP is a server side scripting language designed for web development. It is open source, cost-effective, and can be easily deployed to any servers including Linux and Windows.</p>
-                        <p class="text-gray-600">Our experienced PHP developers can develop applications ranging from small one page applications to large scale web applications using various frameworks and CMS solutions.</p>
+
+                <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-8 rounded-[2rem] text-white shadow-xl shadow-emerald-500/20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                    <div class="relative z-10 flex items-start gap-6">
+                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        </div>
+                        <p class="text-lg font-medium leading-relaxed">
+                            We also consider the security aspect of the system as top priority that result into robust web application. We take every assignment and client as top priority, which help us in delivering the solution on timely basis.
+                        </p>
                     </div>
-                    <div class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                        <h4 class="text-xl font-bold text-emerald-600 mb-3">ASP.NET Web Development</h4>
-                        <p class="text-gray-600 mb-4">ASP.NET is a powerful framework by Microsoft for producing dynamic Web pages. It enables us to build dynamic web sites, web applications and web services tailored to your business needs.</p>
-                        <p class="text-gray-600">We have deep experience in creating high-performance ASP.NET web sites using the latest versions like ASP.NET 4.5 and ASP.NET MVC 4 across various categories.</p>
+                </div>
+                
+                <div class="space-y-10">
+                    <h3 class="text-3xl font-bold text-secondary text-center">Core Technologies</h3>
+                    
+                    <div class="space-y-8">
+                    
+                        <div class="group bg-white rounded-3xl border border-gray-100 p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-l-emerald-500">
+                            <div class="flex flex-col md:flex-row gap-8 items-start">
+                                <div class="w-20 h-20 rounded-2xl bg-emerald-50 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+                                    <svg class="w-10 h-10 text-emerald-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2C6.47,2,2,6.47,2,12s4.47,10,10,10,10-4.47,10-10S17.53,2,12,2ZM15,13h-2v2c0,0.55-0.45,1-1,1s-1-0.45-1-1v-2H9c-0.55,0-1-0.45-1-1s0.45-1,1-1h2V9c0-0.55,0.45-1,1-1s1,0.45,1,1v2h2c0,0.55,0.45,1,1,1S15.55,13,15,13Z"/></svg>
+                                </div>
+                                <div class="space-y-4">
+                                    <h4 class="text-2xl font-bold text-secondary">PHP Web Development</h4>
+                                    <div class="prose max-w-none text-gray-600 leading-relaxed space-y-4">
+                                        <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. The main benefit of PHP is: it is open source, we don't have to pay for it and it can be easily deployed to any servers including Linux and Windows with no hassles.</p>
+                                        <p>We have experienced PHP developers that can develop applications ranging from small one page applications to a large scale web application. Additionally there are so many open source frameworks and CMS solutions exists developed in PHP.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="group bg-white rounded-3xl border border-gray-100 p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-l-blue-500">
+                            <div class="flex flex-col md:flex-row gap-8 items-start">
+                                <div class="w-20 h-20 rounded-2xl bg-blue-50 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+                                    <svg class="w-10 h-10 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M2,3H22C23.1,3 24,3.9 24,5V19C24,20.1 23.1,21 22,21H2C0.9,21 0,20.1 0,19V5C0,3.9 0.9,3 2,3M14,12H22V10H14V12M14,15H22V13H14V15M14,9H22V7H14V9M10,19V11H12V19H10M4,19V5H6V19H4.5M7,19V5H9V19H7.5Z"/></svg>
+                                </div>
+                                <div class="space-y-4">
+                                    <h4 class="text-2xl font-bold text-secondary">ASP.NET Web Development</h4>
+                                    <div class="prose max-w-none text-gray-600 leading-relaxed space-y-4">
+                                        <p>ASP.NET is a server-side Web application framework designed for Web development to produce dynamic Web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, web applications and web services. The .NET Framework, with its powerful programming model and extensive API set, enables you to create business solutions that work just the way you want.</p>
+                                        <p>Web Tech Talk ASP.NET developers possess deep experience of creating large-scale ASP.NET web applications and high-performance ASP.NET web sites incorporating latest ASP.NET flavors such as ASP.NET 4.5 and ASP.NET MVC 4. Web Tech Talk has developed applications in various categories like consulting, E-commerce, shopping cart development, desktop application development and much more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="mt-10 p-8 bg-gray-50 rounded-3xl border border-gray-100">
-                    <h3 class="text-2xl font-bold text-secondary mb-4">CMS Solutions</h3>
-                    <p class="text-gray-600 mb-6">A content management system (CMS) allows publishing, editing and modifying content from a central interface. We specialize in:</p>
-                    <div class="flex flex-wrap gap-4">
-                        <span class="px-4 py-2 bg-white rounded-full text-emerald-600 font-semibold border border-emerald-100 shadow-sm">WordPress</span>
-                        <span class="px-4 py-2 bg-white rounded-full text-emerald-600 font-semibold border border-emerald-100 shadow-sm">Joomla</span>
-                        <span class="px-4 py-2 bg-white rounded-full text-emerald-600 font-semibold border border-emerald-100 shadow-sm">Drupal</span>
+                <div class="bg-gray-50 rounded-[2.5rem] p-10 md:p-12 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute bottom-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -mr-16 -mb-16"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-10">
+                            <div class="max-w-xl">
+                                <h3 class="text-3xl font-bold text-secondary mb-4">CMS Solutions</h3>
+                                <p class="text-gray-600 leading-relaxed">A content management system (CMS) is a computer application that allows publishing, editing and modifying content, organizing, deleting as well as maintenance from a central interface. CMS's are useful to run websites containing blogs, news, and shopping. Web Tech Talk is highly experienced in the world's most popular platforms.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-center justify-center gap-4 group hover:shadow-md transition-shadow">
+                                <div class="w-3 h-3 rounded-full bg-gradient-to-br from-blue-400 to-blue-600"></div>
+                                <span class="text-lg font-bold text-secondary font-heading tracking-wide">WordPress</span>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-center justify-center gap-4 group hover:shadow-md transition-shadow">
+                                <div class="w-3 h-3 rounded-full bg-gradient-to-br from-red-400 to-red-600"></div>
+                                <span class="text-lg font-bold text-secondary font-heading tracking-wide">Joomla</span>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex items-center justify-center gap-4 group hover:shadow-md transition-shadow">
+                                <div class="w-3 h-3 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600"></div>
+                                <span class="text-lg font-bold text-secondary font-heading tracking-wide">Drupal</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,7 +263,7 @@ export const serviceDetails = {
         content: `
             <div class="space-y-8">
                 <p class="text-lg leading-relaxed text-gray-700">
-                    The Mobile application market is highly profitable, but to be successful, you have to have the right app with great functionality, effective and stunning design, focus on usability, and the right support. That's exactly what you'll find with Web Tech Talk.
+                    The Mobile application market is highly profitable, but to be successful, you have to have the right app with great functionality, effective and stunning design, focus on usability, and the right support. That's exactly what you'll find with Web Tech Talk.When it comes to Mobile application development, Web Tech is the ultimate and right destination.
                 </p>
                 <div class="bg-gradient-to-r from-emerald-500 to-green-600 p-8 rounded-3xl text-white shadow-lg">
                     <h3 class="text-2xl font-bold mb-4">Ultimate Destination for Mobile Apps</h3>
@@ -298,7 +347,6 @@ export const serviceDetails = {
                         You can request for a <strong>FREE sample web data extraction project</strong> for a website from where you want to extract data. We will come up with sample scraped data as per your requirements.
                     </p>
                     <div class="flex flex-wrap gap-4 relative z-10">
-                        <button class="px-8 py-3 bg-white text-emerald-700 font-bold rounded-xl shadow-lg hover:shadow-white/20 transition-all transform hover:-translate-y-1">Get Your Free Sample</button>
                         <a href="/services/csharp-web-scraping-tutorial" class="px-8 py-3 bg-emerald-500/20 text-white font-bold rounded-xl border border-white/20 hover:bg-emerald-500/30 transition-all backdrop-blur-sm">Sample C# Code</a>
                     </div>
                 </div>
@@ -329,7 +377,7 @@ export const serviceDetails = {
                 </div>
 
                 <p class="text-lg leading-relaxed text-gray-700">
-                    If you are looking for some one who can scrape data from websites, web pages and web directories then you are on right place. We are offering web scraping service from last 5+ years. We have experienced developers and analysts who works on scraping projects. Our team can offer an outstanding data extraction service to our clients. We have already completed complex scraping jobs.
+                    If you are looking for some one who can scrape data from websites, web pages and web directories then you are on right place. We are offering web scraping service from last 5+ years. We have experienced developers and analysts who works on scraping projects. Our team can offer an outstanding data extraction service to our clients. We have already completed complex scraping jobs.We have stand alone product to manage multple vendor sites data extracting processing, it has some key feature like Secure Application Access, Easy Configuration of Vendors Credential Information using UI Interface, Automate/On Demand Digital Data Download Processing, Email Notification (Success / Warning / Error), Processing Tracking Module, No Database Requirement, Login Credential Information stored in Encrypted format etc.
                 </p>
 
                 <div class="bg-emerald-50 border-l-4 border-emerald-500 p-8 rounded-r-3xl">
@@ -371,33 +419,79 @@ export const serviceDetails = {
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-8 mt-12">
-                    <div class="space-y-6">
-                        <h3 class="text-3xl font-bold text-secondary text-center">Our Specialized Scraping Services</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            <div class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all">
-                                <div class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></div>
-                                <span class="text-gray-700 font-medium">Crawl website for content extraction</span>
+                <div class="grid grid-cols-1 gap-10 mt-12 pb-12">
+                    <div class="space-y-8">
+                        <h3 class="text-3xl font-bold text-secondary text-center">We provide the following scraping services:</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Card 1 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Content Extraction</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">Crawl website for content extraction and provide extracted content in various formats such as Microsoft Excel (.xls), XML, Microsoft Access (.mdb), SQL, etc. This service can be useful for collecting data such as Real Estate Properties, Product Scraping from E-commerce website, Business directory scraping like Yelp and Manta.</p>
                             </div>
-                            <div class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all">
-                                <div class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></div>
-                                <span class="text-gray-700 font-medium">E-commerce Price Comparison</span>
+                            <!-- Card 2 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Price Comparison</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">Scraping products from E-commerce website for price comparison - systematic scraping from platforms like Amazon, Walmart, or target sites for real-time pricing strategy.</p>
                             </div>
-                            <div class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all">
-                                <div class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></div>
-                                <span class="text-gray-700 font-medium">Real-time live web scraping</span>
+                            <!-- Card 3 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Real-time Live Scraping</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">We also provide PHP script for real time live web scraping i.e. scraping weather, score, stock exchange data from other sites and display on your website.</p>
                             </div>
-                            <div class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all">
-                                <div class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></div>
-                                <span class="text-gray-700 font-medium">Professional Lead generation</span>
+                            <!-- Card 4 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Lead Generation</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">Scraping Web Data for lead generation like email scraping, Telephone no scraping, business address scraping for telemarketing.</p>
                             </div>
-                            <div class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all">
-                                <div class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></div>
-                                <span class="text-gray-700 font-medium">Product reviews and ratings</span>
+                            <!-- Card 5 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Product Reviews</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">Scraping product reviews and ratings to monitor brand reputation and customer sentiment.</p>
                             </div>
-                            <div class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all">
-                                <div class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></div>
-                                <span class="text-gray-700 font-medium">Keyword Scraping for SEO</span>
+                            <!-- Card 6 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Marketing Boost</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">Scraping email addresses to boost marketing of your product, including Link scraping for back-links generation and Keyword scraping for SEO purpose.</p>
+                            </div>
+                            <!-- Card 7 -->
+                            <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col gap-4 lg:col-span-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-secondary">Custom Applications</h4>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-sm lg:text-base">We can also make custom web scraping application as per your requirement and deliver you executable file so you can run scraper on your end.</p>
                             </div>
                         </div>
                     </div>
