@@ -65,7 +65,7 @@ const Hero = () => {
                                     <br />
                                     <div className="text-purple-400">const <span className="text-cyan-400">growth</span> = <span className="text-amber-300">async</span> () {`=>`} {`{`}</div>
                                     <div className="pl-4 text-white">
-                                        <span className="text-purple-400">await</span> WebTechTalk.<span className="text-cyan-400">build</span>({`{`}
+                                        <span className="text-purple-400">await</span> Web Tech Talk<span className="text-cyan-400">build</span>({`{`}
                                     </div>
                                     <div className="pl-8 text-gray-300">quality: <span className="text-rose-400">true</span>,</div>
                                     <div className="pl-8 text-gray-300">scale: <span className="text-amber-300">'unlimited'</span>,</div>

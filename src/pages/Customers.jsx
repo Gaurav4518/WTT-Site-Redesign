@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Container from '../components/common/Container';
 import SectionTitle from '../components/common/SectionTitle';
+import PageHero from '../components/common/PageHero';
+import SEO from '../components/common/SEO';
 
 const clients = [
     {
@@ -59,29 +61,18 @@ const Customers = () => {
     }, []);
 
     return (
-        <div className="pt-24 pb-20 overflow-hidden">
-            {/* Header Section */}
-            <div className="relative py-24 mb-16 overflow-hidden">
-                <div className="absolute inset-0 -z-10">
-                    <div className="absolute inset-0 bg-secondary"></div>
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
-                    {/* Animated grid overlay */}
-                    <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#10B981 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
-                </div>
-
-                <Container className="text-center relative z-10">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-sm mb-6 border border-emerald-500/20">
-                        Our Success
-                    </span>
-                    <h1 className="text-4xl md:text-6xl font-heading font-bold mb-8 text-white leading-tight">
-                        Trusted by <span className="gradient-text">Global Brands</span>
-                    </h1>
-                    <p className="text-xl text-emerald-50/80 max-w-3xl mx-auto leading-relaxed">
-                        We take pride in partnering with industry leaders to deliver transformative digital solutions across the globe.
-                    </p>
-                </Container>
-            </div>
+        <div className="pt-28 pb-20 overflow-hidden">
+            <SEO
+                title="Our Valued Customers"
+                description="Discover the businesses that trust Web Tech Talk for their most critical software engineering and digital transformation projects."
+            />
+            {/* Header Section via Component */}
+            <PageHero
+                badge="Our Success"
+                title="Trusted by"
+                highlightedTitle="Global Brands"
+                description="We take pride in partnering with industry leaders to deliver transformative digital solutions across the globe."
+            />
 
             <Container>
                 {/* Intro Section */}

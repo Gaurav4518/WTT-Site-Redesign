@@ -11,9 +11,14 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
+            const isScrolled = window.scrollY > 10 || document.documentElement.scrollTop > 10;
+            setScrolled(isScrolled);
         };
-        window.addEventListener('scroll', handleScroll);
+
+        // Initial check
+        handleScroll();
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -33,8 +38,8 @@ const Navbar = () => {
     return (
         <header
             className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled
-                ? 'glass shadow-lg shadow-emerald-500/5 py-3'
-                : 'bg-transparent py-5'
+                ? 'bg-white/80 backdrop-blur-lg shadow-lg shadow-emerald-500/5 py-4'
+                : 'bg-transparent py-6'
                 }`}
         >
             <Container>
@@ -51,7 +56,7 @@ const Navbar = () => {
                             <div className="absolute inset-0 bg-emerald-400/20 blur-xl -z-10 rounded-full group-hover:bg-emerald-400/40 transition-colors duration-300"></div>
                         </div>
                         <span className={`text-lg md:text-2xl font-heading font-bold transition-colors duration-300 ${scrolled ? 'text-secondary' : 'text-secondary'}`}>
-                            WebTech<span className="gradient-text">Talk</span>
+                            Web Tech<span className="gradient-text"> Talk</span>
                         </span>
                     </Link>
 

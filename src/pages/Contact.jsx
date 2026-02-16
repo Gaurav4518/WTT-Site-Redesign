@@ -3,6 +3,8 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Container from '../components/common/Container';
 import Button from '../components/common/Button';
 import SectionTitle from '../components/common/SectionTitle';
+import PageHero from '../components/common/PageHero';
+import SEO from '../components/common/SEO';
 
 const Contact = () => {
     useEffect(() => {
@@ -10,29 +12,18 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="pt-24 pb-20">
-            {/* Unified Hero Section - Premium Design */}
-            <div className="relative py-24 mb-20 overflow-hidden">
-                <div className="absolute inset-0 -z-10">
-                    <div className="absolute inset-0 bg-secondary"></div>
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
-                    {/* Animated grid overlay for texture */}
-                    <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#10B981 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
-                </div>
-
-                <Container className="text-center relative z-10">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-sm mb-6 border border-emerald-500/20">
-                        Contact Center
-                    </span>
-                    <h1 className="text-4xl md:text-6xl font-heading font-bold mb-8 text-white leading-tight">
-                        Get In <span className="gradient-text">Touch</span>
-                    </h1>
-                    <p className="text-xl text-emerald-50/80 max-w-3xl mx-auto leading-relaxed">
-                        Let's discuss your project and turn your ideas into digital reality.
-                    </p>
-                </Container>
-            </div>
+        <div className="pt-28 pb-20">
+            <SEO
+                title="Contact Our Team | Professional Digital Consultations"
+                description="Ready to transform your business? Get in touch with Web Tech Talk for expert web development, mobile solutions, and system integration consultations. Reach out today."
+            />
+            {/* Unified Hero Section - Premium Design via Component */}
+            <PageHero
+                badge="Contact Center"
+                title="Get In"
+                highlightedTitle="Touch"
+                description="Let's discuss your project and turn your ideas into digital reality."
+            />
 
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">

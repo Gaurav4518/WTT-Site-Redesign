@@ -68,18 +68,18 @@ const Strategy = () => {
 
                 <div className="relative">
                     {/* Central Line Track */}
-                    <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gray-200 transform md:-translate-x-1/2 rounded-full"></div>
+                    <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gray-200 transform md:-translate-x-1/2 rounded-full"></div>
 
                     {/* Progress Line (Trail) */}
                     <motion.div
                         style={{ height: trailHeight }}
-                        className="absolute left-4 md:left-1/2 top-0 w-1 bg-gradient-brand transform md:-translate-x-1/2 rounded-full origin-top z-10"
+                        className="absolute left-8 md:left-1/2 top-0 w-1 bg-gradient-brand transform md:-translate-x-1/2 rounded-full origin-top z-10"
                     ></motion.div>
 
                     {/* Rocket Indicator */}
                     <motion.div
                         style={{ top: y }}
-                        className="absolute left-4 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
+                        className="absolute left-8 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
                     >
                         {/* Professional Car Icon - Top Down View */}
                         <div className="relative w-full h-full filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.2)]">
@@ -128,7 +128,7 @@ const Strategy = () => {
                         {steps.map((step, index) => (
                             <div key={index} className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} group`}>
                                 {/* Text Content */}
-                                <div className={`md:w-1/2 px-4 ${index % 2 === 0 ? 'md:text-left md:pl-12' : 'md:text-right md:pr-12'} text-center mb-2 md:mb-0`}>
+                                <div className={`md:w-1/2 px-4 ${index % 2 === 0 ? 'md:text-left md:pl-12' : 'md:text-right md:pr-12 md:pl-0'} text-left pl-20 mb-2 md:mb-0`}>
                                     <motion.div
                                         initial={{ opacity: 0, y: 10 }}
                                         whileInView={{ opacity: 1, y: 0 }}

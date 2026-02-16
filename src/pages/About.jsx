@@ -3,6 +3,8 @@ import { FaRocket, FaHandshake, FaLightbulb, FaUsers, FaCheckCircle, FaAward, Fa
 import Container from '../components/common/Container';
 import SectionTitle from '../components/common/SectionTitle';
 import Card from '../components/common/Card';
+import PageHero from '../components/common/PageHero';
+import SEO from '../components/common/SEO';
 
 const About = () => {
     useEffect(() => {
@@ -41,26 +43,17 @@ const About = () => {
 
     return (
         <div className="pt-28 pb-20">
-            {/* --- Hero Section --- */}
-            <div className="relative py-24 mb-20 overflow-hidden">
-                <div className="absolute inset-0 -z-20">
-                    <div className="absolute inset-0 bg-secondary"></div>
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl animate-pulse-glow"></div>
-                    <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-3xl animate-pulse-glow"></div>
-                </div>
-
-                <Container className="text-center relative z-10">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-sm mb-6 border border-emerald-500/20">
-                        Our Identity
-                    </span>
-                    <h1 className="text-4xl md:text-7xl font-heading font-bold mb-8 text-white leading-tight animate-fade-in-up">
-                        Pioneering <span className="gradient-text">Digital Excellence</span>
-                    </h1>
-                    <p className="text-xl text-emerald-50/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-                        We bridge the gap between complex technology and business needs, delivering modern solutions that scale.
-                    </p>
-                </Container>
-            </div>
+            <SEO
+                title="Our Identity & Story"
+                description="Learn about Web Tech Talk's journey, our mission for digital excellence, and the team behind our innovative solutions."
+            />
+            {/* --- Hero Section via Component --- */}
+            <PageHero
+                badge="Our Identity"
+                title="Pioneering"
+                highlightedTitle="Digital Excellence"
+                description="We bridge the gap between complex technology and business needs, delivering modern solutions that scale."
+            />
 
             <Container>
                 {/* --- Who We Are Section --- */}
@@ -70,7 +63,7 @@ const About = () => {
                         <img
                             src="/images/about-team.png"
                             alt="Professional tech team collaborating"
-                            className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+                            className="relative rounded-2xl shadow-2xl w-full h-64 md:h-[500px] object-cover"
                         />
                     </div>
                     <div>

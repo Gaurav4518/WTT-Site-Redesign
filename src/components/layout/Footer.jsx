@@ -19,23 +19,23 @@ const Footer = () => {
                     <div className="col-span-1 sm:col-span-2 lg:col-span-1">
                         <Link to="/" className="inline-block mb-6">
                             <span className="text-2xl font-heading font-bold text-white">
-                                WebTech<span className="gradient-text">Talk</span>
+                                Web Tech<span className="gradient-text"> Talk</span>
                             </span>
                         </Link>
                         <p className="text-gray-400 mb-6 leading-relaxed">
                             Transforming businesses with cutting-edge web and mobile solutions. We deliver quality, performance, and innovation.
                         </p>
-                        <div className="flex gap-3">
-                            <a href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white hover:gradient-primary hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 hover:scale-110">
-                                <FaLinkedin />
+                        {/* <div className="flex gap-4">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/70 hover:text-white hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 transition-all duration-300 hover:scale-110 shadow-sm" title="LinkedIn">
+                                <FaLinkedin size={18} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white hover:gradient-primary hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 hover:scale-110">
-                                <FaTwitter />
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/70 hover:text-white hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 transition-all duration-300 hover:scale-110 shadow-sm" title="Twitter">
+                                <FaTwitter size={18} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white hover:gradient-primary hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 hover:scale-110">
-                                <FaFacebook />
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/70 hover:text-white hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 transition-all duration-300 hover:scale-110 shadow-sm" title="Facebook">
+                                <FaFacebook size={18} />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Quick Links */}
@@ -54,12 +54,42 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
                         <ul className="space-y-3">
-                            <li className="text-gray-400 hover:text-teal-400 transition-colors cursor-default">Web Application Development</li>
-                            <li className="text-gray-400 hover:text-teal-400 transition-colors cursor-default">Mobile App Development</li>
-                            <li className="text-gray-400 hover:text-teal-400 transition-colors cursor-default">Windows Applications</li>
-                            <li className="text-gray-400 hover:text-teal-400 transition-colors cursor-default">Website Scraping</li>
-                            <li className="text-gray-400 hover:text-teal-400 transition-colors cursor-default">PLC Programming</li>
-                            <li className="text-gray-400 hover:text-teal-400 transition-colors cursor-default">SEO Optimization</li>
+                            <li>
+                                <Link to="/services/web-app-development" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    Web Application Development
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/mobile-app-development" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    Mobile App Development
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/windows-app-development" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    Windows Applications
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/website-scraping" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    Website Scraping
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/plc-programming" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    PLC Programming
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/api-integration" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    System Integration
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -83,8 +113,12 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm relative z-10">
-                    <p>© 2016-2026 Web Tech Talk, LLC. All Rights Reserved.</p>
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
+                    <p className="text-gray-500 text-sm italic">© 2016-{new Date().getFullYear()} Web Tech Talk, LLC. All Rights Reserved.</p>
+                    <div className="flex gap-6">
+                        <Link to="/privacy" className="text-gray-500 hover:text-emerald-400 text-xs transition-colors">Privacy Policy</Link>
+                        <Link to="/terms" className="text-gray-500 hover:text-emerald-400 text-xs transition-colors">Terms of Service</Link>
+                    </div>
                 </div>
             </Container>
         </footer>

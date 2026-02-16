@@ -1,37 +1,44 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
 
 const services = [
     {
+        slug: "web-app-development",
         image: "/images/services/web-app.png",
         title: "Web App Development",
         description: "Web Tech Talk is specialized in developing dynamic websites in PHP and ASP.Net using modern web technologies like HTML5, Javascript, AJAX, jQuery and CSS. Our web development service includes web application development, custom CMS development and e-commerce website development. We create a new and innovative business model for Web Development, which can serve most of the solutions. We take every assignment and client as top priority, which help us in delivering the solution on timely basis."
     },
     {
+        slug: "windows-app-development",
         image: "/images/services/windows-app.png",
         title: "Windows App Development",
         description: "Web Tech Talk has rich experience in developing Microsoft Windows based .NET desktop applications. We are a Microsoft .Net Development company and we specialize in custom application development of Microsoft .Net framework and applications. We have developed many windows based desktop applications in the various categories like business, accounting, library software, inventory management software."
     },
     {
+        slug: "plc-programming",
         image: "/images/services/plc.png",
         title: "PLC Programming",
         description: "Web Tech Talk is specialized in PLC based programming and application development. We have successfully created custom applications / components to automated the manufacturing procedures controlled by PLC devices like (Siemens, Allen Brandley, Yokogawa, Adam, Velchem, S7, PLC/SLC 5, GM10, MW100, ) etc. over MODBUSS TCP and Ethernet IP. We design custom application to extract data from PLC, providing solution to control and capture the data from PLC devices based on the business model procedures and trigger driven action."
     },
     {
+        slug: "mobile-app-development",
         image: "/images/services/mobile-app.png",
         title: "Mobile App Development",
         description: "Web Tech Talk Mobile development team is skilled at developing rich, beautiful and scalable native apps for Android/iPhone Devices including phones, tablets and phablets. We have experience in developing a variety of apps in various domains in the industry. Our expertise spans across cross-platform frameworks and native development to deliver high-performance, user-centric mobile solutions that drive engagement. Whether you need a simple utility app or a complex enterprise-grade mobile platform, we provide end-to-end development from conceptualization and UI/UX design to deployment and ongoing maintenance."
     },
     {
+        slug: "website-scraping",
         image: "/images/services/scraping.jpg",
         title: "Website Scraping",
         description: "Web Tech Talk offers affordable 100% risk-free and accurate web data scraping service or data extraction/scraping. It is also known as Web Data Extraction, Web Content Extraction, Web Harvesting, Web Data Grabbing, Web Data Mining and Screen Scraping. We offers Web Data Scraping Service, Data Extraction/Scraping, Text Parsing, Screen Scraping, Web Data Extraction, and Web Data Scraping and custom scraping development service to large companies as well as medium size companies which need data to be processed. We have stand alone product to manage multiple vendor sites data extracting processing, it has some key feature like Secure Application Access, Easy Configuration of Vendors Credential Information using UI Interface, Automate/On Demand Digital Data Download Processing, Email Notification (Success / Warning / Error), Processing Tracking Module, No Database Requirement, Login Credential Information stored in Encrypted format etc."
     },
     {
+        slug: "api-integration",
         image: "/images/services/seo.png",
         title: "API & System Integration",
-        description: "Web Tech Talk provides seamless API and system integration services to connect your disparate business tools and platforms. We specialize in building custom middleware, integrating third-party services like Payment Gateways, CRM systems, and ERP solutions, and ensuring secure, real-time data flow between applications. Our integration solutions help eliminate manual data entry, reduce errors, and streamline your entire business workflow for maximum efficiency."
+        description: "Web Tech Talk empowers businesses by unifying fragmented software ecosystems. We specialize in building high-performance APIs and secure middleware that bridges the gap between modern cloud platforms and legacy systems. Our integration experts automate complex workflows—from Payment Gateways and CRM syncs to ERP orchestration—eliminating data silos and manual overhead. With a 'Security by Design' approach, we ensure your data moves with absolute integrity, unlocking the true potential of your digital infrastructure for seamless, scalable growth."
     }
 ];
 
@@ -94,14 +101,14 @@ const Services = () => {
                                 </div>
 
                                 {/* Description - 10 lines with line-clamp */}
-                                <p className="text-gray-600 leading-relaxed text-sm font-sans line-clamp-[10] mb-6">
+                                <p className="text-gray-600 leading-relaxed text-sm font-sans line-clamp-4 md:line-clamp-[10] mb-6">
                                     {service.description}
                                 </p>
 
                                 {/* Know More Link */}
                                 <div className="flex items-center mt-auto">
-                                    <a
-                                        href="/services"
+                                    <Link
+                                        to={`/services/${service.slug}`}
                                         className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700 transition-colors group/link"
                                     >
                                         <span>Know More</span>
@@ -113,7 +120,7 @@ const Services = () => {
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
