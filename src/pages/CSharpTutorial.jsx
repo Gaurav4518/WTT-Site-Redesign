@@ -188,7 +188,7 @@ webBrowser1.Document.GetElementById("loginPass").InnerText = "your-secure-passwo
                         <div className="pt-16 border-t border-gray-100 flex flex-col lg:flex-row items-center justify-between gap-12">
                             <div className="max-w-xl text-center lg:text-left">
                                 <h3 className="text-3xl font-bold text-secondary mb-3 tracking-tight">Need a custom scraping solution?</h3>
-                                <p className="text-gray-500 text-lg">Our experts can handle complex authentication and data extraction for you. Contact us today for a <strong>FREE sample project</strong>.</p>
+                                <p className="text-gray-500 text-lg">You can request for a FREE sample web data extraction project for a website from where you want to extract data. We will come up with sample scraped data as per your requirements and if that matched with your requirement than pay. Contact us today for a <strong>FREE sample project</strong>.</p>
                             </div>
                             <Link
                                 to="/contact"

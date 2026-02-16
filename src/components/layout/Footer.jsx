@@ -96,18 +96,28 @@ const Footer = () => {
                     {/* Contact Info */}
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
-                        <ul className="space-y-4">
+                        <ul className="space-y-6">
                             <li className="flex items-start gap-3 text-gray-400 group">
                                 <FaMapMarkerAlt className="mt-1 text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" />
-                                <span>Charlotte, NC, USA</span>
+                                <div>
+                                    <span className="block text-white text-xs font-bold uppercase tracking-wider mb-1">USA Office</span>
+                                    <span className="text-sm">2258 Elendil Ln, Charlotte, NC - 28269</span>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3 text-gray-400 group">
+                                <FaMapMarkerAlt className="mt-1 text-teal-400 shrink-0 group-hover:scale-110 transition-transform" />
+                                <div>
+                                    <span className="block text-white text-xs font-bold uppercase tracking-wider mb-1">India Office</span>
+                                    <span className="text-sm">Suite 303, Sector-77, Noida, UP - 201301</span>
+                                </div>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 group">
                                 <FaPhone className="text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" />
-                                <a href="tel:+17043021222" className="hover:text-white transition-colors">+1 704.302.1222</a>
+                                <a href="tel:+17043021222" className="hover:text-white transition-colors text-sm">+1 704.302.1222</a>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 group">
                                 <FaEnvelope className="text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" />
-                                <a href="mailto:connect@web-tech-talk.com" className="hover:text-white transition-colors">connect@web-tech-talk.com</a>
+                                <a href="mailto:connect@web-tech-talk.com" className="hover:text-white transition-colors text-sm">connect@web-tech-talk.com</a>
                             </li>
                         </ul>
                     </div>

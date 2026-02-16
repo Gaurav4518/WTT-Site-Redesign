@@ -25,6 +25,7 @@ const Button = ({
         sm: 'text-sm px-5 py-2.5',
         md: 'text-base px-6 py-3',
         lg: 'text-lg px-8 py-4',
+        xl: 'text-xl px-10 py-5',
     };
 
     return (
