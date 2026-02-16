@@ -37,9 +37,11 @@ const Navbar = () => {
 
     return (
         <header
-            className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled
-                ? 'bg-white/80 backdrop-blur-lg shadow-lg shadow-emerald-500/5 py-4'
-                : 'bg-transparent py-6'
+            className={`fixed w-full top-0 z-50 transition-all duration-500 ${isOpen
+                ? 'bg-white py-4 shadow-lg'
+                : scrolled
+                    ? 'bg-white/80 backdrop-blur-lg shadow-lg shadow-emerald-500/5 py-4'
+                    : 'bg-transparent py-6'
                 }`}
         >
             <Container>
@@ -97,9 +99,8 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'
+                className={`fixed top-0 left-0 w-full h-screen bg-white z-[60] transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'
                     }`}
-                style={{ top: '0' }}
             >
                 <div className="p-6 flex flex-col h-full">
                     <div className="flex justify-between items-center mb-10">
