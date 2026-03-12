@@ -12,7 +12,7 @@ const CSharpTutorial = () => {
     }, []);
 
     return (
-        <div className="pt-24 pb-20 overflow-hidden min-h-screen bg-gray-50/50">
+        <div className="pt-24 pb-20 overflow-hidden min-h-screen page-gradient-bg">
             <SEO
                 title="C# Web Scraping Tutorial | Web Tech Talk"
                 description="Learn how to programmatically login to websites using C#. A comprehensive tutorial on automated web authentication for data scraping."

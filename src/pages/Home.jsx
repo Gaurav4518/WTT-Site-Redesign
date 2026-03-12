@@ -13,7 +13,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="bg-white">
+        <div className="page-gradient-bg">
             <SEO
                 title="Elite Web & Mobile Development"
                 description="Web Tech Talk delivers premium web application development, mobile solutions, and system integrations. Transform your business with our elite engineering expertise."

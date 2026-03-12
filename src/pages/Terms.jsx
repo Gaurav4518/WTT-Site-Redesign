@@ -4,7 +4,7 @@ import PageHero from '../components/common/PageHero';
 
 const Terms = () => {
     return (
-        <div className="pt-28 pb-20">
+        <div className="pt-28 pb-20 page-gradient-bg">
             <PageHero
                 badge="Legal"
                 title="Terms &"

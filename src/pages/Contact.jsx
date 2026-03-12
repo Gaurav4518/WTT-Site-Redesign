@@ -76,7 +76,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="pt-28 pb-20">
+        <div className="pt-28 pb-20 page-gradient-bg">
             <SEO
                 title="Contact Our Team | Professional Digital Consultations"
                 description="Ready to transform your business? Get in touch with Web Tech Talk for expert web development, mobile solutions, and system integration consultations. Reach out today."

@@ -5,7 +5,7 @@ import SectionTitle from '../components/common/SectionTitle';
 
 const Privacy = () => {
     return (
-        <div className="pt-28 pb-20">
+        <div className="pt-28 pb-20 page-gradient-bg">
             <PageHero
                 badge="Legal"
                 title="Privacy"

@@ -61,7 +61,7 @@ const Customers = () => {
     }, []);
 
     return (
-        <div className="pt-28 pb-20 overflow-hidden">
+        <div className="pt-28 pb-20 overflow-hidden page-gradient-bg">
             <SEO
                 title="Our Valued Customers"
                 description="Discover the businesses that trust Web Tech Talk for their most critical software engineering and digital transformation projects."

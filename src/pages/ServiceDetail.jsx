@@ -24,7 +24,7 @@ const ServiceDetail = () => {
     }
 
     return (
-        <div className="pt-24 pb-20 overflow-hidden min-h-screen">
+        <div className="pt-24 pb-20 overflow-hidden min-h-screen page-gradient-bg">
             <SEO
                 title={service.title}
                 description={service.description}

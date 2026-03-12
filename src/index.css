@@ -355,3 +355,38 @@
 .gradient-border:hover::before {
   opacity: 1;
 }
+
+/* ========================================
+   PREMIUM PAGE-LEVEL GREEN GRADIENTS
+   ======================================== */
+
+.page-gradient-bg {
+  background: linear-gradient(180deg, #F0FDF4 0%, #ECFDF5 15%, #F8FDF9 40%, #F0FDFA 70%, #F0FDF4 100%);
+  position: relative;
+}
+
+.page-gradient-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 10% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 80%, rgba(20, 184, 166, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(34, 197, 94, 0.04) 0%, transparent 40%);
+}
+
+.page-gradient-bg>* {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section-level gradient tints for alternating depth */
+.section-gradient-light {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.03) 0%, rgba(20, 184, 166, 0.02) 50%, rgba(34, 197, 94, 0.03) 100%);
+}
+
+.section-gradient-medium {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(20, 184, 166, 0.04) 50%, rgba(236, 253, 245, 0.8) 100%);
+}

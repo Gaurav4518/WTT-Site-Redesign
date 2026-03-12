@@ -10,7 +10,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div className="bg-white">
+        <div className="page-gradient-bg">
             <SEO
                 title="Expert Services"
                 description="Explore our full range of services including Custom Software Development, Mobile Apps, System Integration, and Professional Consulting."
@@ -27,7 +27,7 @@ const Services = () => {
             </div>
 
             {/* ═══════════════ WHY WTT — VALUE PROPOSITION ═══════════════ */}
-            <section className="py-20 md:py-28 bg-white relative">
+            <section className="py-20 md:py-28 section-gradient-light relative">
                 <Container>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Left — Text */}
@@ -94,7 +94,7 @@ const Services = () => {
             </section>
 
             {/* ═══════════════ BUSINESS VERTICALS ═══════════════ */}
-            <section className="py-20 md:py-28 bg-gray-50/80 relative">
+            <section className="py-20 md:py-28 section-gradient-medium relative">
                 <Container>
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <span className="text-emerald-600 font-bold tracking-widest text-xs uppercase mb-4 block">Proven Track Record</span>

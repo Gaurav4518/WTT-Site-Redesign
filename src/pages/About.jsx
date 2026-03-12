@@ -42,7 +42,7 @@ const About = () => {
     ];
 
     return (
-        <div className="pt-28 pb-20">
+        <div className="pt-28 pb-20 page-gradient-bg">
             <SEO
                 title="Our Identity & Story"
                 description="Learn about Web Tech Talk's journey, our mission for digital excellence, and the team behind our innovative solutions."
@@ -101,7 +101,7 @@ const About = () => {
             </Container>
 
             {/* --- Specialized Expertise: Web Scraping --- */}
-            <div className="bg-gray-50 py-24 mb-32">
+            <div className="section-gradient-medium py-24 mb-32">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center mb-16">
                         <SectionTitle
