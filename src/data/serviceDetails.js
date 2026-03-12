@@ -574,5 +574,177 @@ export const serviceDetails = {
                 </div>
             </div>
         `
+    },
+    "ai-and-chatbots": {
+        title: "AI & Chatbot Solutions",
+        content: `
+            <div class="space-y-12">
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p>
+                        Web Tech Talk is at the forefront of the AI revolution, helping businesses leverage Artificial Intelligence and Machine Learning to automate operations, enhance customer experiences, and gain deeper insights from their data. Our AI solutions are designed to be practical, scalable, and integrated seamlessly into your existing workflows.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-600 to-teal-700 p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full -mr-40 -mt-40 blur-3xl group-hover:scale-125 transition-transform duration-1000"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-6">Revolutionizing Customer Support</h3>
+                        <p class="text-lg opacity-90 leading-relaxed max-w-3xl">
+                            We develop intelligent chatbots powered by advanced NLP (Natural Language Processing) and LLMs (Large Language Models) like GPT-4, Claude, and Gemini. These aren't just simple rule-based bots — they understand context, nuance, and intent, providing human-like assistance 24/7.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-secondary mb-4">Custom Conversational AI</h4>
+                        <p class="text-gray-600 leading-relaxed">Tailored chatbots for customer support, lead generation, and internal knowledge management. We build RAG (Retrieval-Augmented Generation) systems that allow bots to answer questions based on your specific business documents.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-secondary mb-4">Machine Learning Models</h4>
+                        <p class="text-gray-600 leading-relaxed">Predictive analytics to forecast demand, identify trends, and optimize pricing. We develop custom ML models that turn your raw data into actionable business intelligence.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-[2.5rem] p-10 border border-gray-100">
+                    <h3 class="text-3xl font-bold text-secondary mb-8 text-center">Our AI Integration Process</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <div class="text-center space-y-3">
+                            <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold mx-auto">1</div>
+                            <h5 class="font-bold text-secondary">Data Audit</h5>
+                            <p class="text-sm text-gray-500">Analyzing your data readiness and AI potential.</p>
+                        </div>
+                        <div class="text-center space-y-3">
+                            <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold mx-auto">2</div>
+                            <h5 class="font-bold text-secondary">Strategy</h5>
+                            <p class="text-sm text-gray-500">Defining clear KPIs and the right AI architecture.</p>
+                        </div>
+                        <div class="text-center space-y-3">
+                            <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold mx-auto">3</div>
+                            <h5 class="font-bold text-secondary">Development</h5>
+                            <p class="text-sm text-gray-500">Building, training, and fine-tuning your AI model.</p>
+                        </div>
+                        <div class="text-center space-y-3">
+                            <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold mx-auto">4</div>
+                            <h5 class="font-bold text-secondary">Deployment</h5>
+                            <p class="text-sm text-gray-500">Seamless integration and continuous monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-50 border-l-4 border-emerald-500 p-8 rounded-r-3xl">
+                    <h4 class="text-xl font-bold text-emerald-900 mb-4">Ethical & Secure AI</h4>
+                    <p class="text-emerald-800 leading-relaxed italic">
+                        We prioritize data privacy and ethical AI development. All our models are built with strict security protocols to ensure your proprietary data remains safe and your AI interactions stay within your brand's compliance guidelines.
+                    </p>
+                </div>
+            </div>
+        `
+    },
+    "cloud-and-devops": {
+        title: "Cloud & DevOps Solutions",
+        content: `
+            <div class="space-y-12">
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p>
+                        Accelerate your digital transformation with Web Tech Talk's Cloud & DevOps services. We help you migrate, build, and optimize applications on leading cloud platforms while implementing automated pipelines that speed up delivery and improve reliability.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-[url('/images/patterns/grid.svg')] opacity-10"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-6">Cloud-Native Excellence</h3>
+                        <p class="text-lg opacity-90 leading-relaxed max-w-3xl">
+                            Whether you're looking to migrate legacy systems to the cloud or build modern serverless architectures, our team provides the expertise to leverage AWS, Microsoft Azure, and Google Cloud Platform for maximum scalability and cost-efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                        </div>
+                        <h4 class="font-bold text-secondary mb-2">Cloud Migration</h4>
+                        <p class="text-sm text-gray-600">Secure and efficient transition of your infrastructure and applications to the cloud with minimal downtime.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h4 class="font-bold text-secondary mb-2">CI/CD Automation</h4>
+                        <p class="text-sm text-gray-600">Automating development workflows to ensure faster releases and higher code quality through continuous integration.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        </div>
+                        <h4 class="font-bold text-secondary mb-2">Infrastructure as Code</h4>
+                        <p class="text-sm text-gray-600">Managing and provisioning infrastructure through machine-readable definition files for consistency and speed.</p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-8 rounded-r-3xl">
+                    <h4 class="text-xl font-bold text-blue-900 mb-2">Optimize Performance, Reduce Costs</h4>
+                    <p class="text-blue-800 leading-relaxed italic">
+                        Our DevOps practices don't just speed up deployment; they increase the visibility of your infrastructure, helping you identify bottlenecks and optimize resource usage to significantly reduce cloud spending.
+                    </p>
+                </div>
+            </div>
+        `
+    },
+    "ui-ux-design": {
+        title: "UI/UX Design & Branding",
+        content: `
+            <div class="space-y-12">
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p>
+                        Great technology deserves a great interface. At Web Tech Talk, we blend aesthetics with functionality to create user experiences that are intuitive, engaging, and aligned with your brand's identity. Our design-first approach ensures that your users love every interaction with your product.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group border-b-8 border-emerald-700/30">
+                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-6">User-Centric Design Philosophy</h3>
+                        <p class="text-lg opacity-90 leading-relaxed max-w-3xl">
+                            We believe that UI/UX is more than just how it looks — it's about how it works for the end-user. By conducting thorough user research and iterative prototyping, we build interfaces that solve problems and delight users across all devices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="group p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-500 transition-colors">
+                                <svg class="w-8 h-8 text-emerald-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-secondary">Creative UI Design</h4>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">Modern, vibrant, and premium visual designs tailored to your brand. We focus on typography, color theory, and layout to create stunning first impressions.</p>
+                    </div>
+                    <div class="group p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-500 transition-colors">
+                                <svg class="w-8 h-8 text-blue-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-secondary">UX Strategy</h4>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">In-depth user research, wireframing, and usability testing. We map out user journeys to ensure your application is as easy to use as it is beautiful.</p>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100 italic text-center">
+                    <p class="text-gray-600 font-medium">"Design is not just what it looks like and feels like. Design is how it works." — Steve Jobs</p>
+                </div>
+            </div>
+        `
     }
 };

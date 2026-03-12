@@ -22,7 +22,7 @@ const PageHero = ({ badge, title, highlightedTitle, description, children }) => 
                         {badge}
                     </span>
                 )}
-                <h1 className="text-4xl md:text-7xl font-heading font-bold mb-8 text-white leading-tight animate-fade-in-up">
+                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-8 text-white leading-tight animate-fade-in-up">
                     {title} <span className="gradient-text">{highlightedTitle}</span>
                 </h1>
                 <p className="text-xl text-emerald-50/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">

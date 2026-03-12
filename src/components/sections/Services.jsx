@@ -39,6 +39,24 @@ const services = [
         image: "/images/services/seo.png",
         title: "API & System Integration",
         description: "Web Tech Talk empowers businesses by unifying fragmented software ecosystems. We specialize in building high-performance APIs and secure middleware that bridges the gap between modern cloud platforms and legacy systems. Our integration experts automate complex workflows—from Payment Gateways and CRM syncs to ERP orchestration—eliminating data silos and manual overhead. With a 'Security by Design' approach, we ensure your data moves with absolute integrity, unlocking the true potential of your digital infrastructure for seamless, scalable growth."
+    },
+    {
+        slug: "ai-and-chatbots",
+        image: "/images/services/ai-chatbot.png",
+        title: "AI & Chatbot Solutions",
+        description: "Empower your business with cutting-edge Artificial Intelligence and Conversational AI solutions. We specialize in building intelligent, context-aware chatbots powered by LLMs like GPT-4 and Claude, enabling 24/7 automated customer support. Our expertise extends to Machine Learning for predictive analytics, RAG-based systems for internal knowledge management, and AI-driven process automation. Whether it's enhancing user engagement through personalized interactions or optimizing operations through intelligent data analysis, our AI services are designed to bring measurable efficiency and innovation to your enterprise."
+    },
+    {
+        slug: "cloud-and-devops",
+        image: "/images/services/cloud.png",
+        title: "Cloud & DevOps Solutions",
+        description: "Accelerate your digital transformation with our robust Cloud and DevOps services. We provide end-to-end support for migrating legacy systems to leading platforms like AWS, Microsoft Azure, and Google Cloud, ensuring high availability and cost-efficiency. Our DevOps specialists implement modern CI/CD pipelines, Infrastructure as Code (IaC), and containerization strategies to streamline your development lifecycle. By focusing on scalability, security, and automated monitoring, we help you reduce time-to-market while maintaining a stable, high-performance cloud environment tailored to your growth."
+    },
+    {
+        slug: "ui-ux-design",
+        image: "/images/services/ui-ux.png",
+        title: "UI/UX Design & Branding",
+        description: "Craft stunning digital experiences where aesthetics meet seamless functionality. Our UI/UX design experts focus on creating intuitive, user-centric interfaces that drive engagement and build brand loyalty. From in-depth user research and wireframing to high-fidelity prototyping and visual design, we ensure every touchpoint is optimized for usability. We specialize in glassmorphism, modern typography, and responsive layouts that look beautiful on any device. By blending creative brand identity with strategic design thinking, we transform complex technology into delightful, easy-to-use products."
     }
 ];
 

@@ -38,11 +38,16 @@
 }
 
 @layer base {
+  html, body {
+    @apply overflow-x-hidden;
+  }
+
   body {
     @apply font-sans text-gray-800 antialiased;
     background-color: var(--color-bg-light);
     background-image: var(--color-bg-mesh);
     background-attachment: fixed;
+    -webkit-tap-highlight-color: transparent;
   }
 
   h1,
