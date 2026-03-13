@@ -78,8 +78,9 @@ const Contact = () => {
     return (
         <div className="pt-28 pb-20 page-gradient-bg">
             <SEO
-                title="Contact Our Team | Professional Digital Consultations"
-                description="Ready to transform your business? Get in touch with Web Tech Talk for expert web development, mobile solutions, and system integration consultations. Reach out today."
+                title="Contact Our Team"
+                description="Ready to transform your business? Get in touch with Web Tech Talk for expert web development, mobile solutions, and system integration consultations. Our experts are ready to assist you in Charlotte, NC and Noida, India."
+                keywords="contact software developers, hire web development team, project consultation, IT solutions company, hire mobile app developers, system integration experts"
             />
             {/* Unified Hero Section - Premium Design via Component */}
             <PageHero

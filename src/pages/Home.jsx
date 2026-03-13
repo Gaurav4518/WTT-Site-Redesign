@@ -15,8 +15,10 @@ const Home = () => {
     return (
         <div className="page-gradient-bg">
             <SEO
-                title="Elite Web & Mobile Development"
-                description="Web Tech Talk delivers premium web application development, mobile solutions, and system integrations. Transform your business with our elite engineering expertise."
+                title="Elite Web & Mobile Development Solutions"
+                description="Web Tech Talk is a premier software engineering firm specializing in custom web applications, mobile app development, and AI-driven solutions. Scale your business with our elite tech team."
+                keywords="web development, mobile app development, custom software solutions, AI chatbots, cloud computing, systems integration, elite software engineers, business automation"
+                type="website"
             />
             <Hero />
             <Clients />

@@ -1,10 +1,16 @@
 import React from 'react';
 import Container from '../components/common/Container';
 import PageHero from '../components/common/PageHero';
+import SEO from '../components/common/SEO';
 
 const Terms = () => {
     return (
         <div className="pt-28 pb-20 page-gradient-bg">
+            <SEO 
+                title="Terms & Conditions | Legal Framework"
+                description="Understand the terms and conditions for using Web Tech Talk's software development and IT consulting services."
+                robots="noindex, follow"
+            />
             <PageHero
                 badge="Legal"
                 title="Terms &"

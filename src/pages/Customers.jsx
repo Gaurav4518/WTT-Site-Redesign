@@ -64,7 +64,8 @@ const Customers = () => {
         <div className="pt-28 pb-20 overflow-hidden page-gradient-bg">
             <SEO
                 title="Our Valued Customers"
-                description="Discover the businesses that trust Web Tech Talk for their most critical software engineering and digital transformation projects."
+                description="Discover the businesses that trust Web Tech Talk for their most critical software engineering and digital transformation projects. From startups to global brands, we deliver excellence."
+                keywords="web tech talk clients, software success stories, tech case studies, global technology partners, trusted software developers, industry expertise"
             />
             {/* Header Section via Component */}
             <PageHero

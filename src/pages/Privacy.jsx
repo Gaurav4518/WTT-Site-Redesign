@@ -2,10 +2,16 @@ import React from 'react';
 import Container from '../components/common/Container';
 import PageHero from '../components/common/PageHero';
 import SectionTitle from '../components/common/SectionTitle';
+import SEO from '../components/common/SEO';
 
 const Privacy = () => {
     return (
         <div className="pt-28 pb-20 page-gradient-bg">
+            <SEO 
+                title="Privacy Policy | Data Protection Commitment"
+                description="Read Web Tech Talk's privacy policy to understand how we protect your data and handle information in accordance with global standards."
+                robots="noindex, follow"
+            />
             <PageHero
                 badge="Legal"
                 title="Privacy"

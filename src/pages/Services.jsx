@@ -13,7 +13,8 @@ const Services = () => {
         <div className="page-gradient-bg">
             <SEO
                 title="Expert Services"
-                description="Explore our full range of services including Custom Software Development, Mobile Apps, System Integration, and Professional Consulting."
+                description="Explore our elite technology services: Custom Web Applications, Mobile App Development, AI Chatbots, Cloud & DevOps, PLC Automation, and System Integration. High-performance solutions for modern business."
+                keywords="IT services, custom software development, cloud solutions, PLC programming, mobile app development, system integration, AI solutions, professional tech consulting"
             />
             {/* ═══════════════ HERO ═══════════════ */}
             <div className="pt-28">

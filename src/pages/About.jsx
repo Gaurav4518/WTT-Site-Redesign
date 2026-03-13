@@ -45,7 +45,9 @@ const About = () => {
         <div className="pt-28 pb-20 page-gradient-bg">
             <SEO
                 title="Our Identity & Story"
-                description="Learn about Web Tech Talk's journey, our mission for digital excellence, and the team behind our innovative solutions."
+                description="Discover the story behind Web Tech Talk. Learn about our mission to provide elite software engineering, our agile scrum methodology, and our commitment to architectural excellence."
+                keywords="software engineering team, agile development, scrum methodology, web tech talk story, custom software experts, IT consulting, digital transformation"
+                type="article"
             />
             {/* --- Hero Section via Component --- */}
             <PageHero

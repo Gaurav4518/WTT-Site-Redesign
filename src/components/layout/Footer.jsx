@@ -55,6 +55,24 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
                         <ul className="space-y-3">
                             <li>
+                                <Link to="/services/ai-and-chatbots" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    AI & Chatbot Solutions
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/cloud-and-devops" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    Cloud & DevOps Solutions
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/ui-ux-design" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
+                                    UI/UX Design & Branding
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="/services/web-app-development" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
                                     <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
                                     Web Application Development
@@ -63,7 +81,7 @@ const Footer = () => {
                             <li>
                                 <Link to="/services/mobile-app-development" className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2 group">
                                     <span className="w-1.5 h-1.5 rounded-full bg-teal-500/30 group-hover:bg-teal-400 transition-all"></span>
-                                    Mobile App Development
+                                    Mobile Application Development
                                 </Link>
                             </li>
                             <li>

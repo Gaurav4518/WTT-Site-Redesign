@@ -38,7 +38,9 @@
 }
 
 @layer base {
-  html, body {
+
+  html,
+  body {
     @apply overflow-x-hidden;
   }
 

@@ -28,6 +28,8 @@ const ServiceDetail = () => {
             <SEO
                 title={service.title}
                 description={service.description}
+                keywords={`${service.title}, custom software development, IT solutions, enterprise applications`}
+                type="article"
             />
             {/* Hero Header */}
             <div className="relative py-20 mb-12 overflow-hidden bg-secondary">

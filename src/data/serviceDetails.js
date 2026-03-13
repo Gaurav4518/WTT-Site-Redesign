@@ -49,7 +49,7 @@ export const serviceDetails = {
         `
     },
     "plc-programming": {
-        title: "PLC Programming & Industrial Automation",
+        title: "PLC Programming",
         content: `
             <div class="space-y-8">
                 <p class="text-lg leading-relaxed text-gray-700">
@@ -333,7 +333,7 @@ export const serviceDetails = {
         `
     },
     "website-scraping": {
-        title: "Web Data Scraping Service",
+        title: "Website Scraping",
         content: `
             <div class="space-y-8">
                 <p class="text-lg leading-relaxed text-gray-700">
@@ -507,7 +507,7 @@ export const serviceDetails = {
                     Connectivity is the backbone of modern digital business. Web Tech Talk specializes in bridging the gap between isolated systems through robust API & System Integration. We enable your software ecosystem to communicate seamlessly, ensuring data flows where it's needed, when it's needed, without manual intervention.
                 </p>
 
-                <div class="bg-gradient-to-r from-blue-600 to-emerald-600 p-8 rounded-3xl text-white shadow-lg">
+                <div class="bg-gradient-to-r from-emerald-600 to-teal-700 p-8 rounded-3xl text-white shadow-lg">
                     <h3 class="text-2xl font-bold mb-4">Unlocking Business Agility</h3>
                     <p class="opacity-90 leading-relaxed">
                         In today's fast-paced market, manually moving data between CRMs, Payment Gateways, and ERPs is a bottleneck. Our integration experts build secure, scalable pipelines that automate these workflows, reducing errors and allowing your team to focus on high-value tasks.
@@ -576,7 +576,7 @@ export const serviceDetails = {
         `
     },
     "ai-and-chatbots": {
-        title: "AI & Chatbot Solutions",
+        title: "AI & Chatbots",
         content: `
             <div class="space-y-12">
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -648,7 +648,7 @@ export const serviceDetails = {
         `
     },
     "cloud-and-devops": {
-        title: "Cloud & DevOps Solutions",
+        title: "Cloud & DevOps",
         content: `
             <div class="space-y-12">
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -657,7 +657,7 @@ export const serviceDetails = {
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group">
+                <div class="bg-gradient-to-r from-emerald-600 to-teal-700 p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[url('/images/patterns/grid.svg')] opacity-10"></div>
                     <div class="relative z-10">
                         <h3 class="text-3xl font-bold mb-6">Cloud-Native Excellence</h3>
@@ -701,7 +701,7 @@ export const serviceDetails = {
         `
     },
     "ui-ux-design": {
-        title: "UI/UX Design & Branding",
+        title: "UI/UX Design",
         content: `
             <div class="space-y-12">
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">

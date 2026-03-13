@@ -14,8 +14,10 @@ const CSharpTutorial = () => {
     return (
         <div className="pt-24 pb-20 overflow-hidden min-h-screen page-gradient-bg">
             <SEO
-                title="C# Web Scraping Tutorial | Web Tech Talk"
-                description="Learn how to programmatically login to websites using C#. A comprehensive tutorial on automated web authentication for data scraping."
+                title="C# Login Automation Tutorial"
+                description="Master automated web authentication with C#. Learn how to programmatically login to websites using the WebBrowser control for advanced data extraction and scraping projects."
+                keywords="C# web scraping, login automation C#, programmatic login, web data extraction tutorial, automated authentication, webscraper development"
+                type="article"
             />
 
             {/* Hero Section */}
@@ -158,7 +160,7 @@ webBrowser1.Document.GetElementById("loginPass").InnerText = "your-secure-passwo
 
                                 {/* Step 3 */}
                                 <div className="relative pl-20 group">
-                                    <div className="absolute left-0 top-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-xl shadow-blue-500/20 group-hover:scale-110 transition-transform">3</div>
+                                    <div className="absolute left-0 top-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-white flex items-center justify-center text-2xl font-bold shadow-xl shadow-emerald-500/20 group-hover:scale-110 transition-transform">3</div>
                                     <div className="space-y-4">
                                         <h4 className="text-2xl font-bold text-secondary">Triggering the Submit Button</h4>
                                         <p className="text-gray-600 leading-relaxed">Finally, we programmatically trigger the login process by invoking the click member on the submit button element:</p>
