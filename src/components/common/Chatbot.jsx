@@ -38,6 +38,18 @@ const KNOWLEDGE_GRAPH = [
         setsContext: 'ai'
     },
     {
+        id: 'service_design',
+        keywords: ['ui', 'ux', 'design', 'user interface', 'user experience', 'figma', 'prototype', 'wireframe', 'branding', 'graphics'],
+        answer: "**UI/UX Design & Branding** 🎨\n\nWe craft stunning, human-centric digital experiences:\n• **Research**: User personas and journey mapping.\n• **Prototyping**: High-fidelity interactive wireframes in Figma.\n• **Visual Design**: Modern aesthetics (Glassmorphism, Dark Mode).\n• **Usability**: Rigorous testing to ensure seamless navigation.",
+        setsContext: 'design'
+    },
+    {
+        id: 'service_devops',
+        keywords: ['devops', 'cloud', 'aws', 'azure', 'google cloud', 'ci/cd', 'docker', 'kubernetes', 'infrastructure', 'deployment'],
+        answer: "**Cloud & DevOps Engineering** ☁️\n\nAccelerating your delivery with robust infrastructure:\n• **Cloud Migration**: Seamless transitions to AWS, Azure, or GCP.\n• **CI/CD**: Fully automated build and deployment pipelines.\n• **Containerization**: Scaling with Docker and Kubernetes.\n• **Infrastructure as Code**: Terraform and Ansible for reliability.",
+        setsContext: 'devops'
+    },
+    {
         id: 'service_web',
         keywords: ['web', 'website', 'frontend', 'backend', 'full stack', 'react', 'node', 'php', 'javascript', 'html', 'css', 'cms', 'ecommerce'],
         answer: "**Web Application Development** 🌐\n\nWe engineer fast, secure, and scalable web platforms:\n• **Frontend**: React.js, Tailwind, modern animation libraries\n• **Backend**: Node.js, PHP, ASP.NET, Spring Boot\n• **Ecommerce**: Custom checkout and inventory solutions\n• **Architecture**: Microservices and headless CMS.",
