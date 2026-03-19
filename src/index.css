@@ -284,6 +284,97 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+.animate-slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Custom Scrollbar for Chat */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 10px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}
+
+/* ========================================
+   SVG ROBOT ANIMATIONS
+   ======================================== */
+
+@keyframes walk-across {
+  0% { transform: translateX(-20vw); }
+  100% { transform: translateX(100vw); }
+}
+
+@keyframes leg-swing {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(20deg); }
+}
+
+@keyframes arm-swing {
+  0%, 100% { transform: rotate(20deg); }
+  50% { transform: rotate(-20deg); }
+}
+
+@keyframes leg-swing-reverse {
+  0%, 100% { transform: rotate(20deg); }
+  50% { transform: rotate(-20deg); }
+}
+
+@keyframes arm-swing-reverse {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(20deg); }
+}
+
+@keyframes idle-breathe {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-2px) scaleY(1.02); }
+}
+
+@keyframes dangle-leg {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+}
+
+@keyframes crown-glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.5)); stroke: #FCD34D; }
+  50% { filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.9)); stroke: #FBBF24; }
+}
+
+@keyframes eye-blink {
+  0%, 96%, 98%, 100% { transform: scaleY(1); opacity: 1; }
+  97%, 99% { transform: scaleY(0.1); opacity: 0; }
+}
+
+.animate-walk-across {
+  animation: walk-across 15s linear infinite;
+}
+
+.animate-idle-breathe {
+  animation: idle-breathe 4s ease-in-out infinite;
+}
+
+.animate-crown-glow {
+  animation: crown-glow 3s ease-in-out infinite;
+}
+
 .animate-bounce-slow {
   animation: bounceSlow 3s infinite ease-in-out;
 }

@@ -13,6 +13,8 @@ import CSharpTutorial from './pages/CSharpTutorial';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
+import Chatbot from './components/common/Chatbot';
+
 function App() {
   return (
     <Router>
@@ -33,6 +35,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
+        <Chatbot />
       </div>
     </Router>
   );
