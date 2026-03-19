@@ -19,7 +19,7 @@ const KNOWLEDGE_GRAPH = [
     // Greeting Intent
     {
         id: 'greeting',
-        keywords: ['hi','hii','hiii', 'hello', 'hey', 'greetings', 'morning', 'afternoon', 'sup'],
+        keywords: ['hi', 'hii', 'hiii', 'hello', 'hey', 'greetings', 'morning', 'afternoon', 'sup'],
         answer: "**Hello! 👋 Welcome to Web Tech Talk.**\n\nI'm your dedicated AI Assistant. I can help you with:\n• Our Services & Technologies\n• Pricing & Custom Quotes\n• Company History & Success Stories\n• Contacting our human experts\n\nHow can I accelerate your business today?",
         setsContext: 'general'
     },
@@ -27,44 +27,50 @@ const KNOWLEDGE_GRAPH = [
     {
         id: 'company_overview',
         keywords: ['about', 'company', 'who are you', 'what is wtt', 'background', 'introduction'],
-        answer: "**About Web Tech Talk**\n\nWe are a premium software engineering firm with a global footprint.\n• **Experience**: 10+ Years\n• **Projects**: 500+ Delivered successfully\n• **Clients**: 120+ Happy partners globally\n• **Methodology**: Strict Agile & Scrum workflows\n\nWe bridge the gap between complex technology and business needs.",
+        answer: "**About Web Tech Talk**\n\nWe are a premium software engineering firm specializing in modern **Agile & Scrum** development.\n• **Experience**: 10+ Years\n• **Projects**: 500+ Delivered successfully\n• **Clients**: 120+ Happy partners globally\n• **Methodology**: Professional Scrum workflow for all projects.\n\nWe bridge the gap between complex technology and business needs with meticulous attention to detail.",
         setsContext: 'company'
     },
     // --- ALL SERVICES (Detailed) ---
     {
+        id: 'services_all',
+        keywords: ['services', 'offer', 'expertise', 'capabilities', 'what do you do', 'solutions'],
+        answer: "**Our Core Expertise** 🚀\n\nWe provide end-to-end technical excellence across multiple domains:\n• **AI & Automation**: Custom Chatbots, LLMs, and RAG systems.\n• **Web & Mobile**: Scalable platforms and native/cross-platform apps.\n• **Industrial (PLC)**: Factory automation and data capture.\n• **Data Scraping**: High-performance enterprise extraction.\n• **UI/UX & DevOps**: Human-centric design and robust cloud pipelines.\n\nWhich area should we deep-dive into?",
+        setsContext: 'general'
+    },
+    {
         id: 'service_ai',
-        keywords: ['ai', 'artificial intelligence', 'chatbots', 'gpt', 'llm', 'machine learning', 'ml', 'automation', 'nlp', 'rag'],
-        answer: "**AI & Conversational Engineering** 🤖\n\nWe build intelligent systems that work 24/7 for your business:\n• **Custom Chatbots** powered by GPT-4 and Claude\n• **Machine Learning** for predictive analytics\n• **RAG** (Retrieval-Augmented Generation) for internal knowledge management\n• **Process Automation** to cut operational costs.",
+        keywords: ['ai', 'artificial intelligence', 'chatbots', 'chatbot', 'gpt', 'llm', 'machine learning', 'machine', 'learning', 'ml', 'models', 'automation', 'nlp', 'rag', 'ai chatbot', 'ai research', 'intelligent systems', 'predictive', 'analytics', 'ai integration', 'ai process', 'solutions'],
+        answer: "**AI & Conversational Engineering** 🤖\n\nWe provide cutting-edge AI solutions tailored to your business:\n• **Custom AI Chatbots**: Context-aware bots powered by GPT-4, Claude, and Gemini.\n• **RAG Systems**: Bots that answer specifically from your business documents.\n• **Predictive ML Models**: Turning raw data into demand and trend forecasts.\n\n**Our 4-Step Integration Process:**\n1. **Data Audit**: Analyzing your data readiness.\n2. **Strategy**: Defining KPIs and architecture.\n3. **Development**: Building and fine-tuning your model.\n4. **Deployment**: Seamless integration and 24/7 monitoring.",
         setsContext: 'ai'
     },
     {
         id: 'service_design',
-        keywords: ['ui', 'ux', 'design', 'user interface', 'user experience', 'figma', 'prototype', 'wireframe', 'branding', 'graphics'],
+        keywords: ['ui', 'ux', 'design', 'user interface', 'user experience', 'figma', 'prototype', 'wireframe', 'branding', 'graphics', 'ui design', 'ux design', 'web design', 'mobile design'],
         answer: "**UI/UX Design & Branding** 🎨\n\nWe craft stunning, human-centric digital experiences:\n• **Research**: User personas and journey mapping.\n• **Prototyping**: High-fidelity interactive wireframes in Figma.\n• **Visual Design**: Modern aesthetics (Glassmorphism, Dark Mode).\n• **Usability**: Rigorous testing to ensure seamless navigation.",
         setsContext: 'design'
     },
     {
         id: 'service_devops',
-        keywords: ['devops', 'cloud', 'aws', 'azure', 'google cloud', 'ci/cd', 'docker', 'kubernetes', 'infrastructure', 'deployment'],
+        keywords: ['devops', 'operations', 'ops', 'cloud', 'aws', 'azure', 'google cloud', 'ci/cd', 'docker', 'kubernetes', 'infrastructure', 'deployment', 'server', 'sysadmin', 'cloud computing', 'cloud infrastructure'],
         answer: "**Cloud & DevOps Engineering** ☁️\n\nAccelerating your delivery with robust infrastructure:\n• **Cloud Migration**: Seamless transitions to AWS, Azure, or GCP.\n• **CI/CD**: Fully automated build and deployment pipelines.\n• **Containerization**: Scaling with Docker and Kubernetes.\n• **Infrastructure as Code**: Terraform and Ansible for reliability.",
         setsContext: 'devops'
     },
     {
         id: 'service_web',
-        keywords: ['web', 'website', 'frontend', 'backend', 'full stack', 'react', 'node', 'php', 'javascript', 'html', 'css', 'cms', 'ecommerce'],
+        keywords: ['web', 'website', 'frontend', 'backend', 'full stack', 'react', 'node', 'php', 'javascript', 'html', 'css', 'cms', 'ecommerce', 'dev', 'development', 'software', 'coding', 'programming', 'web development', 'web application', 'custom website'],
         answer: "**Web Application Development** 🌐\n\nWe engineer fast, secure, and scalable web platforms:\n• **Frontend**: React.js, Tailwind, modern animation libraries\n• **Backend**: Node.js, PHP, ASP.NET, Spring Boot\n• **Ecommerce**: Custom checkout and inventory solutions\n• **Architecture**: Microservices and headless CMS.",
         setsContext: 'web'
     },
     {
         id: 'service_mobile',
-        keywords: ['mobile', 'app', 'ios', 'android', 'iphone', 'react native', 'flutter', 'handheld', 'tablet'],
+        keywords: ['mobile', 'app', 'apps', 'ios', 'android', 'iphone', 'react native', 'flutter', 'handheld', 'tablet', 'application', 'mobile app', 'ios app', 'android app', 'mobile development'],
         answer: "**Mobile App Development** 📱\n\nReach your customers direct on any device:\n• **Native**: Swift (iOS) and Kotlin (Android)\n• **Cross-Platform**: React Native and Flutter experts\n• **Scalability**: Optimized for millions of users\n• **UI/UX**: Intuitive, gesture-driven interfaces.",
         setsContext: 'mobile'
     },
     {
         id: 'service_scraping',
-        keywords: ['scrape', 'scraping', 'extraction', 'mining', 'harvesting', 'crawler', 'data grab', 'screen scraping'],
-        answer: "**Enterprise Data Extraction** 🔍\n\nOne of our top specializations! We offer 100% risk-free, accurate data mining:\n• **Daily/Weekly Feeds**: Automated data delivery\n• **Competitor Monitoring**: Price and stock tracking\n• **Custom Crawlers**: Built for high-defense sites (bypass Cloudflare/Akamai)\n• **Encrypted Access**: Secure handling of vendor credentials.",
+        keywords: ['scrape', 'scraping', 'extraction', 'mining', 'harvesting', 'crawler', 'data grab', 'screen scraping', 'web scraping', 'web extraction', 'data extraction', 'data mining'],
+        answer: "**Enterprise Data Extraction** 🔍\n\nWe offer affordable, 100% risk-free, and accurate web data scraping or data extraction/scraping.\n\n**Our Stand-Alone Extraction Product:**\nWe manage multiple vendor sites with our custom-built engine which features:\n• **Secure Access**: Encrypted credential storage and secure application access.\n• **Easy Setup**: UI Interface for quick configuration of Vendor Credentials.\n• **Automated Processing**: On-demand or automated digital data download.\n• **Real-time Tracking**: Dedicated Tracking Module with Email Notifications (Success/Warning/Error).\n• **Infrastructure**: Lightweight design with no database requirement for the standalone product.",
         setsContext: 'scraping'
     },
     {
@@ -75,8 +81,8 @@ const KNOWLEDGE_GRAPH = [
     },
     {
         id: 'service_integration',
-        keywords: ['api', 'integration', 'middleware', 'gateway', 'crm', 'erp', 'sync', 'orchestration'],
-        answer: "**API & System Integration** 🔗\n\nUnifying fragmented platforms into one ecosystem:\n• **Middleware**: Custom bridges between legacy and cloud systems\n• **Sync**: Real-time CRM, ERP, and payment gateway orchestration\n• **Integrity**: 'Security by Design' to ensure data stays valid\n• **Efficiency**: Eliminating manual data entry and silos.",
+        keywords: ['api', 'integration', 'middleware', 'gateway', 'crm', 'erp', 'sync', 'orchestration', 'integration process'],
+        answer: "**API & System Integration Process** 🔗\n\nWe unify fragmented ecosystems through a proven 4-step roadmap:\n1. **Audit**: Mapping all existing data touchpoints and silos.\n2. **Design**: Architecting secure, scalable API schemas.\n3. **Build**: Coding robust middleware logic and connectors.\n4. **Monitor**: 24/7 uptime tracking and real-time error handling.\n\nWe ensure **Security by Design** using OAuth2, JWT, and encrypted pipelines.",
         setsContext: 'integration'
     },
     {
@@ -87,23 +93,26 @@ const KNOWLEDGE_GRAPH = [
     },
     // ... existing stats, clients, strategy ...
     // Restricting the chunk for standard replace
+    // --- CLIENTS & PORTFOLIO ---
+    {
+        id: 'clients',
+        keywords: ['clients', 'client', 'customers', 'customer', 'partners', 'partner', 'who you work with', 'portfolio', 'funder america', 'gsg', 'onindus', 'who are customer', 'who are your customers', 'who is your customer', 'client list', 'customer base'],
+        answer: "**Our Trusted Partners** 🤝\n\nWe work with industry leaders and innovative startups, including:\n**Funder America**\n**Global Systems Group (GSG)**\n**Foothill Gold Line**\n**OnIndus**\n**SDUHSD**\n**UIC**\n\nWe handle projects for both large enterprises and growing medium-sized firms.",
+        setsContext: 'company'
+    },
+    // --- COMPANY STATS ---
     {
         id: 'company_stats',
-        keywords: ['stats', 'numbers', 'how many', 'experience', 'projects', 'clients', 'track record', 'success rate'],
+        keywords: ['stats', 'statistics', 'numbers', 'how many', 'experience', 'projects', 'clients', 'track record', 'success rate'],
         answer: "**Web Tech Talk by the Numbers** 📊\n\n• **500+** Projects Successfully Delivered\n• **120+** Long-term Global Happy Clients\n• **10+** Years of Technical Excellence\n• **100%** Client Satisfaction Guarantee\n• **24/7** Priority Support Available",
         setsContext: 'company'
     },
-    {
-        id: 'clients',
-        keywords: ['clients', 'customers', 'partners', 'who you work with', 'portfolio', 'funder america', 'gsg', 'onindus'],
-        answer: "**Our Trusted Partners** 🤝\n\nWe work with industry leaders and innovative startups, including:\n• **Funder America**\n• **Global Systems Group (GSG)**\n• **Foothill Gold Line**\n• **OnIndus**\n• **SDUHSD**\n• **UIC**\n\nWe handle projects for both large enterprises and growing medium-sized firms.",
-        setsContext: 'company'
-    },
+
     // Methodology & Strategy
     {
         id: 'strategy',
-        keywords: ['process', 'how you work', 'strategy', 'steps', 'workflow', 'agile', 'scrum', 'methodology'],
-        answer: "**Our 6-Step Effective Strategy** 🚀\n\n1. **Onboarding**: Setting up your project management framework.\n2. **Sourcing**: AI-driven talent alignment with your goals.\n3. **Training**: Custom certification pathways for the team.\n4. **Production**: Functioning as a high-performance extension of your business.\n5. **Improvement**: Continuous process refinement via Customer Success Managers.\n6. **Growth**: Scaling operations and optimizing ROI.",
+        keywords: ['strategy', 'process', 'workflow', 'how you work', 'steps', 'methodology', 'agile', 'scrum'],
+        answer: "**Our Effective Strategy: The 6-Step Workflow** 🚀\n\nWe follow a strict **Modern Agile & Scrum** methodology to ensure quality:\n1. **Onboarding**: Dedicated specialists guide you through team building.\n2. **Sourcing**: Combining AI recruitment with proactive headhunting.\n3. **Training**: Custom pathways to equip teams with project-specific skills.\n4. **Production**: Functioning as an extension of your business with continuous measurement.\n5. **Continuous Improvement**: Customer Success Managers refine your workflow daily.\n6. **Growth**: Scaling operations and driving sustainable profitability.",
         setsContext: 'strategy'
     },
     // Support & Trust
@@ -121,8 +130,8 @@ const KNOWLEDGE_GRAPH = [
     },
     {
         id: 'why_choose_us',
-        keywords: ['why choose', 'why you', 'advantage', 'better', 'unique', 'different', 'benefits'],
-        answer: "**Why Partner with Web Tech Talk?** 🏆\n\n• **Experience**: 10+ years in the industry with 500+ successful projects.\n• **Agility**: We use Scrum methodology for transparent, weekly progress.\n• **Quality**: 'Security by Design' and peer-reviewed code as standard.\n• **Client-First**: We deeply listen and consult, rather than just taking orders.",
+        keywords: ['why choose', 'why you', 'advantage', 'better', 'unique', 'different', 'benefits', 'convince', 'convience', 'convance', 'why partner', 'choose wtt', 'value', 'trust'],
+        answer: "**Why Partner with Web Tech Talk?** 🏆\n\nWe don't just write code; we build lasting relationships and solutions:\n• **Deep Communication**: We listen and understand your business to ensure effective design.\n• **Experienced Team**: Specialized PMs, designers, and programmers for top-tier results.\n• **Cost-Effective**: High-quality solutions that fit your budget and timeline.\n• **Proven Track Record**: 10+ Years, 500+ Projects, and 100% Client Satisfaction.\n\nWe provide **24/7 Support** to ensure your success never sleeps.",
         setsContext: 'company'
     },
     {
@@ -150,7 +159,7 @@ const CONTEXT_AWARE_RESPONSES = {
 // =========================================================================
 const analyzeIntent = (input, currentContext) => {
     const rawInput = input.toLowerCase();
-    
+
     // Check for CONTEXT-AWARE questions first
     const isPriceQuestion = /price|cost|quote|budget|how much|estimate|fee|charge/.test(rawInput);
     if (isPriceQuestion) {
@@ -164,18 +173,18 @@ const analyzeIntent = (input, currentContext) => {
     // Evaluate against Knowledge Graph using Regex boundaries for precision
     for (const intent of KNOWLEDGE_GRAPH) {
         let score = 0;
-        
+
         for (const kw of intent.keywords) {
             try {
                 // If the keyword contains \b, treat as literal boundary regex
-                const regex = kw.includes('\\b') 
-                    ? new RegExp(kw, 'i') 
+                const regex = kw.includes('\\b')
+                    ? new RegExp(kw, 'i')
                     : new RegExp(`\\b${kw}\\b`, 'i'); // Auto-add boundaries for safety
-                
+
                 if (regex.test(rawInput)) {
                     // Weight: Multi-word phrases are worth exponentially more
                     const wordCount = kw.replace(/\\b/g, '').split(' ').length;
-                    score += Math.pow(wordCount, 2) + 2; 
+                    score += Math.pow(wordCount, 2) + 2;
                 }
             } catch (e) {
                 // Fallback basic includes if regex fails (e.g. strange characters)
@@ -276,7 +285,7 @@ const Chatbot = () => {
         // We calculate delay based on "thinking" and "typing" time (length of response)
         const analysis = analyzeIntent(text, context);
         const finalAnswer = typeof analysis === 'string' ? analysis : analysis.answer;
-        
+
         if (typeof analysis === 'object' && analysis.newContext) {
             setContext(analysis.newContext); // Update Bot Memory
         }
@@ -317,7 +326,7 @@ const Chatbot = () => {
 
             {/* Main Chat Interface */}
             <div className={`absolute bottom-0 right-0 w-[360px] sm:w-[420px] h-[600px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-gray-200/60 flex flex-col overflow-hidden transition-all duration-500 origin-bottom-right ${isOpen ? 'scale-100 opacity-100 translate-y-0' : 'scale-75 opacity-0 translate-y-10 pointer-events-none'}`}>
-                
+
                 {/* Header Profile */}
                 <div className="p-4 gradient-primary text-white flex items-center justify-between shrink-0 shadow-sm z-10">
                     <div className="flex items-center gap-3">
@@ -332,8 +341,8 @@ const Chatbot = () => {
                         <div>
                             <h3 className="font-bold text-base leading-tight">WTT Consultant AI</h3>
                             <p className="text-xs text-emerald-100 font-medium mt-0.5 flex items-center gap-1.5">
-                                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                                Natural Language Engine Active
+                                <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse"></span>
+                                Chat with us
                             </p>
                         </div>
                     </div>
@@ -351,11 +360,10 @@ const Chatbot = () => {
 
                     {messages.map((msg) => (
                         <div key={msg.id} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
-                            <div className={`max-w-[85%] p-4 shadow-sm relative text-sm leading-relaxed ${
-                                msg.sender === 'user'
+                            <div className={`max-w-[85%] p-4 shadow-sm relative text-sm leading-relaxed ${msg.sender === 'user'
                                     ? 'bg-emerald-600 text-white rounded-2xl rounded-tr-sm'
                                     : 'bg-white text-gray-700 rounded-2xl rounded-tl-sm border border-gray-100/80 shadow-emerald-500/5'
-                            }`}>
+                                }`}>
                                 {msg.sender === 'bot' ? formatText(msg.text) : msg.text}
                                 <span className={`text-[9px] font-bold mt-2 block opacity-40 uppercase tracking-wider ${msg.sender === 'user' ? 'text-right' : 'text-left'}`}>
                                     {msg.time}
@@ -363,7 +371,7 @@ const Chatbot = () => {
                             </div>
                         </div>
                     ))}
-                    
+
                     {/* Intelligent Typing Indicator */}
                     {isTyping && (
                         <div className="flex justify-start">
@@ -378,7 +386,7 @@ const Chatbot = () => {
                 </div>
 
                 {/* Intelligent Suggestions (Context Driven) */}
-                {!isTyping && messages[messages.length-1]?.sender === 'bot' && (
+                {!isTyping && messages[messages.length - 1]?.sender === 'bot' && (
                     <div className="px-3 py-2.5 flex gap-2 overflow-x-auto no-scrollbar whitespace-nowrap bg-white/95 border-t border-gray-100 shrink-0">
                         {quickReplies.map((reply, i) => (
                             <button
