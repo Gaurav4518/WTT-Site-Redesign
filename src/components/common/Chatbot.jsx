@@ -26,7 +26,7 @@ const KNOWLEDGE_GRAPH = [
     // Company Intent
     {
         id: 'company_overview',
-        keywords: ['about', 'company', 'who are you', 'what is wtt', 'background', 'introduction'],
+        keywords: ['about us', 'about wtt', 'about web tech talk', 'about the company', 'about your company', 'company', 'who are you', 'what is wtt', 'background', 'introduction'],
         answer: "**About Web Tech Talk**\n\nWe are a premium software engineering firm specializing in modern **Agile & Scrum** development.\n• **Experience**: 10+ Years\n• **Projects**: 500+ Delivered successfully\n• **Clients**: 120+ Happy partners globally\n• **Methodology**: Professional Scrum workflow for all projects.\n\nWe bridge the gap between complex technology and business needs with meticulous attention to detail.",
         setsContext: 'company'
     },
@@ -39,7 +39,7 @@ const KNOWLEDGE_GRAPH = [
     },
     {
         id: 'service_ai',
-        keywords: ['ai', 'artificial intelligence', 'chatbots', 'chatbot', 'gpt', 'llm', 'machine learning', 'machine', 'learning', 'ml', 'models', 'automation', 'nlp', 'rag', 'ai chatbot', 'ai research', 'intelligent systems', 'predictive', 'analytics', 'ai integration', 'ai process', 'solutions'],
+        keywords: ['ai', 'artificial intelligence', 'chatbots', 'chatbot', 'gpt', 'llm', 'machine learning', 'machine', 'learning', 'ml', 'models', 'automation', 'nlp', 'rag', 'ai chatbot', 'ai research', 'intelligent systems', 'predictive', 'analytics', 'ai integration', 'ai process', 'solutions', 'ai expertise', 'your ai', 'ai services', 'ai solutions', 'ai capabilities'],
         answer: "**AI & Conversational Engineering** 🤖\n\nWe provide cutting-edge AI solutions tailored to your business:\n• **Custom AI Chatbots**: Context-aware bots powered by GPT-4, Claude, and Gemini.\n• **RAG Systems**: Bots that answer specifically from your business documents.\n• **Predictive ML Models**: Turning raw data into demand and trend forecasts.\n\n**Our 4-Step Integration Process:**\n1. **Data Audit**: Analyzing your data readiness.\n2. **Strategy**: Defining KPIs and architecture.\n3. **Development**: Building and fine-tuning your model.\n4. **Deployment**: Seamless integration and 24/7 monitoring.",
         setsContext: 'ai'
     },
@@ -361,8 +361,8 @@ const Chatbot = () => {
                     {messages.map((msg) => (
                         <div key={msg.id} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
                             <div className={`max-w-[85%] p-4 shadow-sm relative text-sm leading-relaxed ${msg.sender === 'user'
-                                    ? 'bg-emerald-600 text-white rounded-2xl rounded-tr-sm'
-                                    : 'bg-white text-gray-700 rounded-2xl rounded-tl-sm border border-gray-100/80 shadow-emerald-500/5'
+                                ? 'bg-emerald-600 text-white rounded-2xl rounded-tr-sm'
+                                : 'bg-white text-gray-700 rounded-2xl rounded-tl-sm border border-gray-100/80 shadow-emerald-500/5'
                                 }`}>
                                 {msg.sender === 'bot' ? formatText(msg.text) : msg.text}
                                 <span className={`text-[9px] font-bold mt-2 block opacity-40 uppercase tracking-wider ${msg.sender === 'user' ? 'text-right' : 'text-left'}`}>
